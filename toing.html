@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toing:Food</title>
+    <link rel="stylesheet" href="./toing.css"/>
+</head>
+<body>
+    <header> 
+    <div class="logo"> 🍴 TOING </div> 
+    <nav> <button onclick="showSection('home')"> Home </button> 
+
+    <button onclick="showSection('menu')"> Menu </button> 
+    <button onclick="showSection('about')"> About </button>
+    <button onclick="showSection('contact')"> Contact </button>
+    </nav> 
+
+    <div class="cart-icon"> 
+    <button onclick="showSection('cart')"> 🛒 <span id="cart-count"> 0 </span>
+    </button> 
+    </div>
+    </header>
+
+    <section id="home" class="page-section"> 
+    <div class="hero">
+    <h1> Welcome to Toing Restaurant 🍽️ </h1>
+    <p>Itss Onlyyyy Forrr Foodiesss</p>
+    <p> Delicious food, made with love. </p> 
+    <button onclick="showSection('menu')" class="menu-btn"> Explore Menu </button>
+    </div> 
+    </section> 
+
+    <section id="menu" class="page-section"> 
+    <h1> Our Menu </h1>
+    <div class="menu">
+
+    <div class="food"> 
+    <h2>🍕 Pizza</h2>
+    <p>₹250</p> 
+    <button onclick="addToCart('Pizza', 250)"> Add to Cart </button> 
+    </div>
+
+    <div class="food"> 
+    <h2>🍔 Burger</h2>
+    <p>₹150</p> 
+    <button onclick="addToCart('Burger', 150)"> Add to Cart </button> 
+    </div>
+
+    <div class="food"> 
+    <h2>🍛 Biriyani</h2> 
+    <p>₹200</p> 
+    <button onclick="addToCart('Biriyani', 200)"> Add to Cart </button>
+    </div>
+
+    <div class="food"> 
+    <h2>🍜 Noodles</h2>
+    <p>₹160</p>
+    <button onclick="addToCart('Noodles', 160)"> Add to Cart </button>
+    </div> 
+
+    <div class="food"> 
+    <h2>🍚 Fried Rice</h2> 
+    <p>₹180</p>
+    <button onclick="addToCart('Fried Rice', 180)"> Add to Cart </button> 
+    </div> 
+
+    <div class="food"> 
+    <h2>🍗 Chicken 65</h2> 
+    <p>₹220</p> 
+    <button onclick="addToCart('Chicken 65', 220)"> Add to Cart </button>
+    </div> 
+
+    <div class="food"> 
+    <h2>🧀 Paneer Tikka</h2>
+    <p>₹190</p>
+    <button onclick="addToCart('Paneer Tikka', 190)"> Add to Cart </button> 
+    </div> 
+
+    <div class="food"> 
+    <h2>🥞 Dosa</h2>
+    <p>₹80</p>
+    <button onclick="addToCart('Dosa', 80)"> Add to Cart </button>
+    </div> 
+
+    <div class="food"> 
+    <h2>🥘 Parotta</h2> 
+    <p>₹100</p> 
+    <button onclick="addToCart('Parotta', 100)"> Add to Cart </button>
+    </div>
+
+    <div class="food">
+    <h2>🍦 Ice Cream</h2>
+    <p>₹120</p> 
+    <button onclick="addToCart('Ice Cream', 120)"> Add to Cart </button> 
+    </div> 
+    </div> 
+    </section> 
+
+    <section id="about" class="page-section"> 
+    <div class="about"> 
+    <h1> About Us </h1>
+    <p> Welcome to Toing Restaurant! </p>
+    <p>Onlyyyy Forrrrrrr Foodieeeesssss</p>
+    <p> We serve delicious and freshly prepared food made with quality ingredients. </p> 
+    <p> Our goal is to provide tasty food and a wonderful dining experience for everyone. </p> 
+    </div> 
+    </section> 
+
+    <section id="contact" class="page-section"> 
+    <div class="contact"> 
+    <h1> Contact Us </h1>
+    <p> 📍 Chennai, Tamil Nadu </p> 
+    <p> 📞 +8643005207 </p> 
+    <p> 📧 toing@gmail.com </p>
+    <form>
+    <input type="text" placeholder="Your Name"> 
+    <input type="email" placeholder="Your Email"> 
+    <textarea placeholder="Your Message"> </textarea>
+    <button type="submit"> Send Message </button>
+    </form> 
+    </div> 
+    </section> 
+
+    <section id="cart" class="page-section"> 
+    <h1> Your Cart 🛒 </h1> <div id="cart-items"> 
+    <p> Your cart is empty </p> 
+    </div> 
+    <h2 id="total"> Total: ₹0 </h2> 
+    <button onclick="showSection('menu')"> Continue Shopping </button> 
+    </section> 
+
+    <footer> 
+    <div class="footer-content"> 
+    <div> 
+    <h3> 🍴 TOING Restaurant </h3> 
+    <p> Good food. Good mood. </p> 
+    </div> 
+    <div> 
+    <h3> Quick Links </h3>
+    <button onclick="showSection('home')"> Home </button> 
+    <button onclick="showSection('menu')"> Menu </button> 
+    <button onclick="showSection('about')"> About </button>
+    <button onclick="showSection('contact')"> Contact </button> 
+    </div> <div> <h3> Opening Hours </h3>
+    <p> Monday - Sunday </p> 
+    <p> 10:00 AM - 10:00 PM </p>
+    </div> 
+    </div> 
+    <p class="copyright"> © 2026 TOING Restaurant. All Rights Reserved. </p> 
+    </footer>
+
+    <script src="./toing.js"></script>
+</body>
+</html>
